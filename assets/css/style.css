@@ -4,6 +4,7 @@ html{
   :root{
       --light-purple: #903367;
       --dark-purple: #971d55;
+      --blue:#2a3b71;
       --green: #599459;
   }
   h1,h2,h3,h4,h5,h6{
@@ -21,8 +22,17 @@ html{
   .section-title{
     text-align: center;
     margin-bottom: 50px;
+    color: var(--blue);
   }
   .section-title h1{
+      font-weight: bold;
+  }
+  .section-title-white{
+    text-align: center;
+    margin-bottom: 50px;
+    /* color: #fff; */
+  }
+  .section-title-white h1{
       font-weight: bold;
   }
   .btn{
@@ -70,6 +80,10 @@ li{
 .color-white{
     color: #fff;
 }
+
+/* ===========================================
+================ Navbar ================  
+=========================================== */
 .navbar{
     background-color: var(--light-purple);
     color: #fff;
@@ -105,6 +119,35 @@ li{
 .dropdown-item:hover{
     color: var(--light-purple);
 }
+
+/* ===========================================
+================ About ================  
+=========================================== */
+.about-textarea{
+    color: var(--blue);
+}
+/* ===========================================
+================ Stat ================  
+=========================================== */
+#stat{
+    background-image: url(../images/statistics/statistics-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.stat-box{
+    color: #fff;
+    background-color: var(--dark-purple);
+}
+.stat-box h3{
+    font-size: 80px;
+}
+.stat-box p{
+    font-size: 25px;
+}
+/* ===========================================
+================ Footer ================  
+=========================================== */
 footer{
     background-color: var(--dark-purple);
     padding: 20px 0;
