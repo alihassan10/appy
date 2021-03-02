@@ -65,11 +65,17 @@ html{
  .mb-30{
     margin-bottom: 30px;
 }
+.mt-30{
+    margin-top: 30px;
+}
 .pb-50{
     padding-bottom: 50px;
 }
 .pb-70{
     padding-bottom: 70px;
+}
+.pt{
+    padding-top: 70px;
 }
 li{
     list-style: none;
@@ -144,6 +150,33 @@ li{
 }
 .stat-box p{
     font-size: 25px;
+}
+.dollar{
+    font-size: 80px;
+}
+.dollar-sign{
+    font-size: 20px;
+    position: relative;
+    bottom: 45px;
+    left: 44px;
+}
+.pricing-box a{
+    color: var(--blue);
+    background-color: #fff;
+    border: 2px solid var(--blue);
+    border-radius: 30px;
+    padding: 12px 30px;
+}
+.pricing-box{
+    border: 1px solid var(--blue);
+    transition: .5s all ease;
+}
+.pricing-box:hover{
+    transform: scale(1.1);
+}
+.pricing-box:hover .pricing-btn a{
+    background-color: var(--blue);
+    color: #fff;
 }
 /* ===========================================
 ================ Footer ================  
