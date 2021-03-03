@@ -170,6 +170,10 @@ li{
 .pricing-box{
     border: 1px solid var(--blue);
     transition: .5s all ease;
+    color: var(--blue);
+    /* margin-right: 10px; */
+    margin-bottom: 40px;
+    margin-top: 20px;
 }
 .pricing-box:hover{
     transform: scale(1.1);
@@ -178,12 +182,70 @@ li{
     background-color: var(--blue);
     color: #fff;
 }
+.feature{
+    border: 1px solid var(--dark-purple);
+    transition: .5s all ease;
+    color: var(--dark-purple);
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding: 20px 0;
+}
+.feature:hover .pricing-btn a{
+    background-color: var(--dark-purple);
+    color: #fff;
+}
+.feature .pricing-btn a{
+    border: 2px solid var(--dark-purple);
+    color: var(--dark-purple);  
+}
+#pricing{
+    padding-bottom: 60px;
+}
 
 /* ===========================================
 ================ Footer ================  
 =========================================== */
 footer{
     background-color: var(--dark-purple);
-    padding: 20px 0;
     color: #fff;
+    padding: 100px 0 15px 0;
+}
+.lower-footer-box-icon a{
+    font-size: 20px;
+    color: #fff;
+    background-color: green!important;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding-left: 8px;
+    padding-top: 1px;
+    margin-right: 10px;
+    /* display: inline-block; */
+}
+.footer-box a{
+    color: #fff;
+}
+.contact-map iframe{
+    height: 170px;
+}
+hr{
+    border: 1px solid gray;
+}
+@media only screen and (min-width:992px){
+    .lower-footer-box-icon a{
+        float: right!important;
+    }
+}
+@media only screen and (max-width:767px){
+    .lower-footer-box-icon{
+        text-align: center;
+    }
+    .lower-footer-box{
+        text-align: center;
+    }
+}
+@media only screen and (max-width:575px){
+    .footer-box{
+        text-align: center;
+    }
 }
