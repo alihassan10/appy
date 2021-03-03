@@ -157,8 +157,10 @@ li{
 .dollar-sign{
     font-size: 20px;
     position: relative;
-    bottom: 45px;
-    left: 44px;
+    top: 71px;
+}
+.pricing-money{
+    display: inline-flex;
 }
 .pricing-box a{
     color: var(--blue);
@@ -171,7 +173,6 @@ li{
     border: 1px solid var(--blue);
     transition: .5s all ease;
     color: var(--blue);
-    /* margin-right: 10px; */
     margin-bottom: 40px;
     margin-top: 20px;
 }
@@ -211,16 +212,16 @@ footer{
     padding: 100px 0 0px 0;
 }
 .lower-footer-icon a{
-    font-size: 20px;
+    font-size: 18px;
     color: #fff;
     background-color: #520735!important;
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    padding-left: 9px;
-    padding-top: 2px;
+    text-align: center;
+    line-height: 35px;
     margin-right: 10px;
-    display: block;
+    display: inline-block;
 }
 .footer-box a{
     color: #fff;
@@ -231,27 +232,21 @@ footer{
 hr{
     border: 1px solid gray;
 }
-@media only screen and (min-width:992px){
-    .lower-footer-icon a{
-        /* float: right!important; */
-    }
-}
 @media only screen and (max-width:767px){
-    /* .lower-footer-icon{
-        text-align: center!important;
-    } */
-    /* .lower-footer-icon a{
-        padding-left: 1px;
-    } */
     .lower-footer{
         text-align: center;
     }
     .lower-footer-icon{
         justify-content: center;
+        float: none!important;
     }
 }
 @media only screen and (max-width:575px){
     .footer-box{
         text-align: center;
     }
+}
+.lower-footer-area{
+    border-top: 1px solid #fff;
+    padding-top: 20px;
 }
