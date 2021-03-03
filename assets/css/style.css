@@ -208,7 +208,7 @@ li{
 footer{
     background-color: var(--dark-purple);
     color: #fff;
-    padding: 100px 0 17px 0;
+    padding: 100px 0 0px 0;
 }
 .lower-footer-icon a{
     font-size: 20px;
@@ -220,6 +220,7 @@ footer{
     padding-left: 9px;
     padding-top: 2px;
     margin-right: 10px;
+    display: block;
 }
 .footer-box a{
     color: #fff;
@@ -232,15 +233,21 @@ hr{
 }
 @media only screen and (min-width:992px){
     .lower-footer-icon a{
-        float: right!important;
+        /* float: right!important; */
     }
 }
 @media only screen and (max-width:767px){
-    .lower-footer-icon{
-        text-align: center;
-    }
+    /* .lower-footer-icon{
+        text-align: center!important;
+    } */
+    /* .lower-footer-icon a{
+        padding-left: 1px;
+    } */
     .lower-footer{
         text-align: center;
+    }
+    .lower-footer-icon{
+        justify-content: center;
     }
 }
 @media only screen and (max-width:575px){
