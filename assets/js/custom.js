@@ -17,10 +17,10 @@ $('#main-carousel').owlCarousel({
     }
 })
 
-$('#logo-carousel').owlCarousel({
+$('#team-carousel').owlCarousel({
     loop:true,
     nav:false,
-    dots:false,
+    dots:true,
     autoplay:true,
     margin: 20,
     autoplayTimeout:3500,
@@ -32,7 +32,7 @@ $('#logo-carousel').owlCarousel({
             items:3
         },
         1000:{
-            items:5
+            items:4
         }
     }
 })

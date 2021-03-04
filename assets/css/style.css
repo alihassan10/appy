@@ -30,7 +30,7 @@ html{
   .section-title-white{
     text-align: center;
     margin-bottom: 50px;
-    /* color: #fff; */
+    color: #fff;
   }
   .section-title-white h1{
       font-weight: bold;
@@ -133,17 +133,41 @@ li{
     color: var(--blue);
 }
 /* ===========================================
+================ Feature ================  
+=========================================== */
+.feature-box a{
+    color: var(--dark-purple);
+    background-color: #fff;
+    border: 2px solid var(--dark-purple);
+    border-radius: 30px;
+    padding: 12px 40px;
+    transition: .5s all ease;
+}
+.feature-box a:hover{
+    color: #fff;
+    background-color: var(--dark-purple);
+}
+.feature-head h1{
+    font-weight: bold
+}
+.feature-box{
+    color: var(--dark-purple);
+}
+/* ===========================================
 ================ Stat ================  
 =========================================== */
 #stat{
     background-image: url(../images/statistics/statistics-bg.jpg);
+    background-color: var(--light-purple);
+    background-blend-mode: multiply;
+    opacity: .9;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 .stat-box{
     color: #fff;
-    background-color: var(--dark-purple);
+    /* background-color: var(--dark-purple); */
 }
 .stat-box h3{
     font-size: 80px;
@@ -151,6 +175,9 @@ li{
 .stat-box p{
     font-size: 25px;
 }
+/* ===========================================
+================ Pricing ================  
+=========================================== */
 .dollar{
     font-size: 80px;
 }
@@ -202,14 +229,95 @@ li{
 #pricing{
     padding-bottom: 60px;
 }
-
+/* ===========================================
+================ Team ================  
+=========================================== */
+.team-box a{
+    font-size: 18px;
+    color: #fff;
+    border: 2px solid var(--dark-purple);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 35px;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: inline-block;
+}
+.team-box{
+    position: relative;
+    overflow: hidden;
+    transition: 1.7s all ease;
+    color: #fff;
+}
+.team-textarea{
+    position: absolute;
+    bottom: 100;
+    margin-left: 10px;
+}
+.team-box:hover .team-textarea{
+    bottom: 0;
+}
+.facebook:hover{
+    background-color: #1f48fd;
+}
+.twitter:hover{
+    background-color: #3c5ffa;
+}
+.insta:hover{
+    background-color: #f12484;
+}
+.linkedin:hover{
+    background-color: #f5173c;
+}
+/* .team-box:hover .team-img img{
+    background-color: var(--light-purple);
+    background-blend-mode: darken;
+} */
+/* ===========================================
+================ Contact ================  
+=========================================== */
+.contact-box a{
+    padding: 10px 25%;
+    background-color: var(--dark-purple);
+    color: #fff;
+}
+#contact{
+    background-image: url(../images/contact/contact-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-attachment: fixed;
+    background-color: var(--light-purple);
+    background-blend-mode: soft-light;
+}
+.contact-box a:hover{
+    color: var(--dark-purple);
+    background-color: #fff;
+}
+.contact-box-right a{
+    font-size: 18px;
+    color: #fff;
+    border: 2px solid var(--dark-purple);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 35px;
+    margin-right: 5px;
+    margin-left: 5px;
+    display: inline-block;
+}
+.contact-box-right{
+    color: #fff;
+}
 /* ===========================================
 ================ Footer ================  
 =========================================== */
 footer{
     background-color: var(--dark-purple);
     color: #fff;
-    padding: 100px 0 0px 0;
+    padding: 100px 0 0 0;
 }
 .lower-footer-icon a{
     font-size: 18px;
@@ -229,6 +337,10 @@ footer{
 .contact-map iframe{
     height: 170px;
 }
+.lower-footer-area{
+    border-top: 1px solid #fff;
+    padding-top: 20px;
+}
 @media only screen and (max-width:767px){
     .lower-footer{
         text-align: center;
@@ -237,13 +349,12 @@ footer{
         justify-content: center;
         float: none!important;
     }
+    .contact-form, .form-control{
+        display: block!important;
+    }
 }
 @media only screen and (max-width:575px){
     .footer-box{
         text-align: center;
     }
-}
-.lower-footer-area{
-    border-top: 1px solid #fff;
-    padding-top: 20px;
 }
