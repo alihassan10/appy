@@ -1,18 +1,19 @@
-$('#main-carousel').owlCarousel({
+$('#testimonial-carousel').owlCarousel({
     loop:true,
     nav:false,
     dots:false,
     autoplay:true,
-    autoplayTimeout:3500,
+    margin: 20,
+    autoplayTimeout:2500,
     responsive:{
         0:{
             items:1
         },
         600:{
-            items:1
+            items:2
         },
         1000:{
-            items:1
+            items:3
         }
     }
 })
@@ -23,7 +24,7 @@ $('#team-carousel').owlCarousel({
     dots:true,
     autoplay:true,
     margin: 20,
-    autoplayTimeout:3500,
+    autoplayTimeout:2000,
     responsive:{
         0:{
             items:1
@@ -36,7 +37,7 @@ $('#team-carousel').owlCarousel({
         }
     }
 })
-$('#property-carousel').owlCarousel({
+$('#blog-carousel').owlCarousel({
     loop:true,
     nav:false,
     dots:false,

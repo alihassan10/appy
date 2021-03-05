@@ -42,6 +42,19 @@ html{
       padding: 12px 20px;
       border-radius: 0;
   }
+  .icon{
+    font-size: 18px;
+    color: var(--light-purple);
+    border: 2px solid var(--dark-purple);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 33px;
+    margin-right: 10px;
+    margin-left: 5px;
+    display: inline-block;
+  }
   .btn-view{
       background-color: transparent;
       color: var(--pink);
@@ -132,40 +145,39 @@ li{
 .about-textarea{
     color: var(--blue);
 }
-#feature{
+/* ===========================================
+================ Feature ================  
+=========================================== */
+/* #feature{
+    position: relative;
     background-image: url(../images/feature/feature-bg.jpg);
     background-repeat: no-repeat;
     background-position: cover;
     background-attachment: fixed;
-    background-color: var(--dark-purple);
-    background-blend-mode: exclusion;
+    padding-bottom: 0%;
 }
-/* .feature-box-main{
-    margin: 0 50px;
-} */
+.feature-img{
+    width: 100%;
+}
 .feature-box{
     color: #fff;
 }
-.feature-box-right{
-    color: #fff;
+.overlay{
+    background-color: #000000c9;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+} */
+#feature{
+    background-color: var(--dark-purple);
 }
 .feature-img{
-    position: relative;
+    margin-right: 10px;
 }
-.feature-img img{
-    width: 20%;
-    position: absolute;
-    top: -100px;
-    right: -50px;
-}
-.feature-img-right{
-    position: relative;
-}
-.feature-img-right img{
-    width: 20%;
-    position: absolute;
-    top: 6px;
-    right: 370px;
+.feature-box{
+    color: #fff;
 }
 /* ===========================================
 ================ business ================  
@@ -189,6 +201,34 @@ li{
     color: var(--dark-purple);
 }
 /* ===========================================
+================ Testimonial ================  
+=========================================== */
+.testimonial-box a{
+    font-size: 18px;
+    color: var(--light-purple);
+    border: 2px solid var(--dark-purple);
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    line-height: 33px;
+    margin-right: 10px;
+    /* margin-left: 5px; */
+    display: inline-block;
+
+}
+.testimonial-box{
+  border: 2px solid var(--light-purple)!important;
+  color: var(--blue);
+  padding: 10px 5px;
+}
+#testimonial{
+    /* background-image: url(../images/testimonial/testimonial-bg.jpg); */
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-attachment: fixed;
+}
+/* ===========================================
 ================ Stat ================  
 =========================================== */
 #stat{
@@ -202,7 +242,6 @@ li{
 }
 .stat-box{
     color: #fff;
-    /* background-color: var(--dark-purple); */
 }
 .stat-box h3{
     font-size: 80px;
@@ -275,27 +314,30 @@ li{
     height: 35px;
     text-align: center;
     border-radius: 50%;
-    line-height: 35px;
-    margin-right: 5px;
-    margin-left: 5px;
+    line-height: 33px;
+    margin-right: 10px;
+    /* margin-right: 5px;
+    margin-left: 5px; */
     display: inline-block;
 }
 .team-box{
     position: relative;
     overflow: hidden;
     transition: 1.7s all ease;
-    color: #fff;
+    color: var(--blue);
 }
 .team-textarea{
     position: absolute;
     bottom: 100;
-    margin-left: 10px;
+    left: 0;
+    /* margin-left: 10px; */
+    transition: 1s all ease;
 }
 .team-box:hover .team-textarea{
     bottom: 0;
 }
 .facebook:hover{
-    background-color: #1f48fd;
+    background-color: #1f48fd!important;
 }
 .twitter:hover{
     background-color: #3c5ffa;
@@ -310,6 +352,32 @@ li{
     background-color: var(--light-purple);
     background-blend-mode: darken;
 } */
+.blog-link a{
+    font-size: 13px;
+    position: relative;
+    top: -100px;
+}
+.blog-box{
+    position: relative;
+    overflow: hidden;
+}
+.blog-img{
+    position: relative;
+    overflow: hidden;
+}
+.blog-link{
+    position: relative;
+    overflow: hidden;
+    /* bottom: 152px; */
+}
+/* .blog-heading{
+    position: relative;
+    overflow: hidden;
+} */
+.blog-heading h4{
+    position: absolute;
+    bottom: 10px;
+}
 /* ===========================================
 ================ Contact ================  
 =========================================== */
@@ -338,14 +406,43 @@ li{
     height: 35px;
     text-align: center;
     border-radius: 50%;
-    line-height: 35px;
-    margin-right: 5px;
-    margin-left: 5px;
+    line-height: 30px;
+    margin-right: 10px;
+    /* margin-left: 5px; */
     display: inline-block;
 }
 .contact-box-right{
     color: #fff;
 }
+/* ===========================================
+================ Subscribe ================  
+=========================================== */
+.subscribe-box a{
+    background-color: #ff530f;
+    color: #fff;
+    padding: 13px 22px;
+    border-radius: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.subscribe-box{
+    position: relative;
+}
+
+@media only screen and (max-width:767px){
+    .subscribe-box a{
+        display: block;
+        width: 100%;
+        position: relative;
+    }
+}
+@media only screen and (max-width:383px){
+    .subscribe-box h3{
+       font-size: 19px;
+    }
+}
+
 /* ===========================================
 ================ Footer ================  
 =========================================== */
@@ -354,10 +451,10 @@ footer{
     color: #fff;
     padding: 100px 0 0 0;
 }
-.lower-footer-icon a{
+/* .lower-footer-icon a{
     font-size: 18px;
     color: #fff;
-    background-color: #520735!important;
+    background-color: #520735;
     width: 35px;
     height: 35px;
     border-radius: 50%;
@@ -365,11 +462,18 @@ footer{
     line-height: 35px;
     margin-right: 10px;
     display: inline-block;
+} */
+
+.lower-footer-icon .icon {
+    background-color: #520735;
+    color: #fff;
 }
+
+
 .footer-box a{
     color: #fff;
 }
-.contact-map iframe{
+.footer-map iframe{
     height: 170px;
 }
 .lower-footer-area{
